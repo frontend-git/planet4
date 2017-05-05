@@ -1,327 +1,250 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Planet4</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Planet4</title>
 
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" href="images/favicon.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <h1 style="text-align:center">Quiz App</h1>
-            <div class="row box-row">
+  <main>
+    <div class="container">
+        <h1 style="text-align:center">Quiz App</h1>
+        <div class="row box-row">
 
-                <div class="col-md-12">
-                    <div class="title">
-                        <h1>  What is your favorite food? </h1> </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-                        <input type="radio" name="inbox1" value="category1" id="c1">
-                        <label class="drinkcard-cc visa" for="c1" style="background-image: url(img/food1.jpg)"></label>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox1" value="category2" id="c2">
-                        <label class="drinkcard-cc visa" for="c2" style="background-image: url(img/food2.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 2 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox1" value="category3" id="c3">
-                        <label class="drinkcard-cc visa" for="c3" style="background-image: url(img/food3.jpg)"></label>
-
-                    </div>
-                    <!-- Promo Content 3 goes here -->
-                </div>
-
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>  What is your favorite food? </h1> </div>
             </div>
-            <div class="row box-row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h1>  What is your favourite colour? </h1> </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox1" value="category1" id="c1">
+                    <label class="drinkcard-cc visa" for="c1" style="background-image: url(img/food1.jpg)"></label>
                 </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox2" value="category3" id="c4">
-                        <label class="drinkcard-cc visa" for="c4" style="background-image: url(img/color-1.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 1 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox2" value="category1" id="c5">
-                        <label class="drinkcard-cc visa" for="c5" style="background-image: url(img/color-2.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 2 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox2" value="category2" id="c6">
-                        <label class="drinkcard-cc visa" for="c6" style="background-image: url(img/color-3.jpg)"></label>
-
-                    </div>
-                    <!-- Promo Content 3 goes here -->
-                </div>
-
             </div>
-
-            <div class="row box-row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h1>  If you won a lot of money, what would you spend it on?  </h1> </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox1" value="category2" id="c2">
+                    <label class="drinkcard-cc visa" for="c2" style="background-image: url(img/food2.jpg)"></label>
                 </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox3" value="category2" id="c7">
-                        <label class="drinkcard-cc visa" for="c7" style="background-image: url(img/money-1.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 1 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox3" value="category3" id="c8">
-                        <label class="drinkcard-cc visa" for="c8" style="background-image: url(img/money-2.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 2 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox3" value="category2" id="c9">
-                        <label class="drinkcard-cc visa" for="c9" style="background-image: url(img/money-3.jpg)"></label>
-
-                    </div>
-                    <!-- Promo Content 3 goes here -->
-                </div>
-
             </div>
-
-            <div class="row box-row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h1>  What is your favourite animal? </h1> </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox1" value="category3" id="c3">
+                    <label class="drinkcard-cc visa" for="c3" style="background-image: url(img/food3.jpg)"></label>
                 </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox4" value="category2" id="c10">
-                        <label class="drinkcard-cc visa" for="c10" style="background-image: url(img/animal.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 1 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox4" value="category1" id="c11">
-                        <label class="drinkcard-cc visa" for="c11" style="background-image: url(img/animal-1.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 2 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox4" value="category3" id="c12">
-                        <label class="drinkcard-cc visa" for="c12" style="background-image: url(img/animal-2.jpg)"></label>
-
-                    </div>
-                    <!-- Promo Content 3 goes here -->
-                </div>
-
             </div>
-
-            <div class="row box-row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h1>  What is your favourite place? </h1> </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox5" value="category1" id="c13">
-                        <label class="drinkcard-cc visa" for="c13" style="background-image: url(img/place-1.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 1 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox5" value="category2" id="c14">
-                        <label class="drinkcard-cc visa" for="c14" style="background-image: url(img/place-2.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 2 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox5" value="category3" id="c15">
-                        <label class="drinkcard-cc visa" for="c15" style="background-image: url(img/place-3.jpg)"></label>
-
-                    </div>
-                    <!-- Promo Content 3 goes here -->
-                </div>
-
-            </div>
-
-
-
-            <div class="row box-row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h1> What is your favourite sport? </h1> </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox6" value="category3" id="c16">
-                        <label class="drinkcard-cc visa" for="c16" style="background-image: url(img/sport-1.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 1 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox6" value="category3" id="c17">
-                        <label class="drinkcard-cc visa" for="c17" style="background-image: url(img/sport-2.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 2 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox6" value="category2" id="c18">
-                        <label class="drinkcard-cc visa" for="c18" style="background-image: url(img/sport-3.jpg)"></label>
-
-                    </div>
-                    <!-- Promo Content 3 goes here -->
-                </div>
-
-            </div>
-
-
-            <div class="row box-row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h1> What is your favourite fruit? </h1> </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox7" value="category2" id="c19">
-                        <label class="drinkcard-cc visa" for="c19" style="background-image: url(img/fruti-1.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 1 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox7" value="category1" id="c20">
-                        <label class="drinkcard-cc visa" for="c20" style="background-image: url(img/fruti-2.jpg)"></label>
-
-                    </div>
-
-                    <!-- Promo Content 2 goes here -->
-                </div>
-                <div class="col-md-4">
-                    <div class="cc-selector-2" onclick="showID()">
-
-                        <input type="radio" name="inbox7" value="category3" id="c21">
-                        <label class="drinkcard-cc visa" for="c21" style="background-image: url(img/fruti-3.jpg)"></label>
-
-                    </div>
-                    <!-- Promo Content 3 goes here -->
-                </div>
-
-            </div>
-
-         
-          <div class="row">
-             <div class="result-box" id="category1" style="display:none"> 
-             <a name="category1"/>
-             <div class="col-md-12"> <h3> Which Greenpeace Campaign Are You? </h3> <h1>  You got: Arctic </h1> </div> 
-             <div class="col-md-6">You are determined, stoic and you can withstand almost 
-anything that comes your way. But not climate change. 
-The Arctic is getting warmer. And as the ice melts, 
-oil companies are rushing to exploit newly available 
-fossil fuel deposits, further contributing to the problem. 
-This needs to stop. For the entire planet’s sake.</div> 
-             <div class="col-md-6"> <img style="width: 100%;" src="img/big-1.jpg"> </div>
-            </div> 
-
-            <div class="result-box" id="category2" style="display:none"> 
-             <a name="category2"/>
-             <div class="col-md-12"> <h3> Which Greenpeace Campaign Are You? </h3> <h1>  You got: Forest </h1> </div> 
-             <div class="col-md-6">You’re fierce and strong and you’re never afraid to 
-stand up for what’s right. You don’t let anything 
-stand in your way. Think about this though: in 
-the 2 minutes it has taken you to do this quiz, 
-a forest area the size of 70 football pitches has 
-been destroyed. Our last forest wildernesses are 
-under threat from industrial scale deforestation. 
-Paradise needs protecting.</div> 
-             <div class="col-md-6"> <img style="width: 100%;" src="img/forest.jpg"> </div>
-            </div>
-
-            <div class="result-box" id="category3" style="display:none">
-             <a name="category3"/>
-             <div class="col-md-12"> <h3> Which Greenpeace Campaign Are You? </h3> <h1>  You got: Ocean </h1> </div> 
-             <div class="col-md-6">You go with the flow, letting the current take you where 
-it will. You shape the world around you and want to make 
-sure that it survives, for all creatures that live on it. 
-Our majestic oceans need help against the destructive 
-forces of unsustainable fishing, drilling, pollution 
-and climate change. Send them an SOS.</div> 
-             <div class="col-md-6"> <img style="width: 100%;" src="img/ocean.jpg"> </div>
-            </div>
-
-          </div>
-
 
         </div>
-    </main>
+        <div class="row box-row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>  What is your favourite colour? </h1> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox2" value="category3" id="c4">
+                    <label class="drinkcard-cc visa" for="c4" style="background-image: url(img/color-1.jpg)"></label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox2" value="category1" id="c5">
+                    <label class="drinkcard-cc visa" for="c5" style="background-image: url(img/color-2.jpg)"></label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+
+                    <input type="radio" name="inbox2" value="category2" id="c6">
+                    <label class="drinkcard-cc visa" for="c6" style="background-image: url(img/color-3.jpg)"></label>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row box-row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>  If you won a lot of money, what would you spend it on?  </h1> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox3" value="category2" id="c7">
+                    <label class="drinkcard-cc visa" for="c7" style="background-image: url(img/money-1.jpg)"></label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox3" value="category3" id="c8">
+                    <label class="drinkcard-cc visa" for="c8" style="background-image: url(img/money-2.jpg)"></label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox3" value="category2" id="c9">
+                    <label class="drinkcard-cc visa" for="c9" style="background-image: url(img/money-3.jpg)"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row box-row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>  What is your favourite animal? </h1> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                  <input type="radio" name="inbox4" value="category2" id="c10">
+                  <label class="drinkcard-cc visa" for="c10" style="background-image: url(img/animal.jpg)"></label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+
+                    <input type="radio" name="inbox4" value="category1" id="c11">
+                    <label class="drinkcard-cc visa" for="c11" style="background-image: url(img/animal-1.jpg)"></label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox4" value="category3" id="c12">
+                    <label class="drinkcard-cc visa" for="c12" style="background-image: url(img/animal-2.jpg)"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row box-row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>  What is your favourite place? </h1> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox5" value="category1" id="c13">
+                    <label class="drinkcard-cc visa" for="c13" style="background-image: url(img/place-1.jpg)"></label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox5" value="category2" id="c14">
+                    <label class="drinkcard-cc visa" for="c14" style="background-image: url(img/place-2.jpg)"></label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox5" value="category3" id="c15">
+                    <label class="drinkcard-cc visa" for="c15" style="background-image: url(img/place-3.jpg)"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row box-row">
+            <div class="col-md-12">
+              <div class="title">
+                <h1> What is your favourite sport? </h1> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox6" value="category3" id="c16">
+                    <label class="drinkcard-cc visa" for="c16" style="background-image: url(img/sport-1.jpg)"></label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox6" value="category3" id="c17">
+                    <label class="drinkcard-cc visa" for="c17" style="background-image: url(img/sport-2.jpg)"></label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox6" value="category2" id="c18">
+                    <label class="drinkcard-cc visa" for="c18" style="background-image: url(img/sport-3.jpg)"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row box-row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h1> What is your favourite fruit? </h1> </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cc-selector-2" onclick="showID()">
+                    <input type="radio" name="inbox7" value="category2" id="c19">
+                    <label class="drinkcard-cc visa" for="c19" style="background-image: url(img/fruti-1.jpg)"></label>
+                </div>
+            </div>
+          <div class="col-md-4">
+            <div class="cc-selector-2" onclick="showID()">
+                <input type="radio" name="inbox7" value="category1" id="c20">
+                <label class="drinkcard-cc visa" for="c20" style="background-image: url(img/fruti-2.jpg)"></label>
+            </div>
+          </div>
+        <div class="col-md-4">
+          <div class="cc-selector-2" onclick="showID()">
+              <input type="radio" name="inbox7" value="category3" id="c21">
+              <label class="drinkcard-cc visa" for="c21" style="background-image: url(img/fruti-3.jpg)"></label>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+         <div class="result-box" id="category1" style="display:none"> 
+         <a name="category1"/>
+         <div class="col-md-12"> <h3> Which Greenpeace Campaign Are You? </h3> <h1>  You got: Arctic </h1> </div> 
+         <div class="col-md-6">You are determined, stoic and you can withstand almost 
+                                anything that comes your way. But not climate change. 
+                                The Arctic is getting warmer. And as the ice melts, 
+                                oil companies are rushing to exploit newly available 
+                                fossil fuel deposits, further contributing to the problem. 
+                                This needs to stop. For the entire planet’s sake.</div> 
+         <div class="col-md-6"> <img style="width: 100%;" src="img/big-1.jpg"> </div>
+        </div> 
+
+        <div class="result-box" id="category2" style="display:none"> 
+         <a name="category2"/>
+         <div class="col-md-12"> <h3> Which Greenpeace Campaign Are You? </h3> <h1>  You got: Forest </h1> </div> 
+         <div class="col-md-6">You’re fierce and strong and you’re never afraid to 
+                                stand up for what’s right. You don’t let anything 
+                                stand in your way. Think about this though: in 
+                                the 2 minutes it has taken you to do this quiz, 
+                                a forest area the size of 70 football pitches has 
+                                been destroyed. Our last forest wildernesses are 
+                                under threat from industrial scale deforestation. 
+                                Paradise needs protecting.</div> 
+         <div class="col-md-6"> <img style="width: 100%;" src="img/forest.jpg"> </div>
+        </div>
+
+        <div class="result-box" id="category3" style="display:none">
+         <a name="category3"/>
+         <div class="col-md-12"> <h3> Which Greenpeace Campaign Are You? </h3> <h1>  You got: Ocean </h1> </div> 
+         <div class="col-md-6">You go with the flow, letting the current take you where 
+                                it will. You shape the world around you and want to make 
+                                sure that it survives, for all creatures that live on it. 
+                                Our majestic oceans need help against the destructive 
+                                forces of unsustainable fishing, drilling, pollution 
+                                and climate change. Send them an SOS.</div> 
+         <div class="col-md-6"> <img style="width: 100%;" src="img/ocean.jpg"> </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
