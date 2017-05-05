@@ -270,8 +270,9 @@
       var countarray = jQuery.inArray("undefined", cat);
       //console.log(countarray);
       if (countarray == -1) {
-          scrollToAnchor(count);
           $('#' + getArray(count)).show('slow');
+          $('.col-md-4').css('pointer-events', 'none');
+          setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight); }, 1000);
       }
   }
 
@@ -287,9 +288,5 @@
               return i;
           }
       }
-  }
-
-  function scrollToAnchor(aid){
-    location.hash = '#' + aid;
   }
 </script>
