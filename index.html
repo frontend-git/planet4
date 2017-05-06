@@ -242,6 +242,8 @@
                                 and climate change. Send them an SOS.</div> 
          <div class="col-md-6"> <img style="width: 100%;" src="img/ocean.jpg"> </div>
         </div>
+
+        <div style="text-align:center; padding-bottom:30px; display:none" id="raplayBtn"><button class="btn btn-primary" onclick="scrollToTop(1000);">Replay</button></div>
       </div>
     </div>
   </main>
@@ -250,43 +252,55 @@
 </html>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script>
-  var cat = [];
-  /* get category array */
-  function createCategoryArray(abc) {
-      var inbox1 = $("input[name='inbox1']:checked").val();
-      var inbox2 = $("input[name='inbox2']:checked").val();
-      var inbox3 = $("input[name='inbox3']:checked").val();
-      var inbox4 = $("input[name='inbox4']:checked").val();
-      var inbox5 = $("input[name='inbox5']:checked").val();
-      var inbox6 = $("input[name='inbox6']:checked").val();
-      var inbox7 = $("input[name='inbox7']:checked").val();
+var cat = [];
+/* get category array */
+function createCategoryArray(abc) {
+    var inbox1 = $("input[name='inbox1']:checked").val();
+    var inbox2 = $("input[name='inbox2']:checked").val();
+    var inbox3 = $("input[name='inbox3']:checked").val();
+    var inbox4 = $("input[name='inbox4']:checked").val();
+    var inbox5 = $("input[name='inbox5']:checked").val();
+    var inbox6 = $("input[name='inbox6']:checked").val();
+    var inbox7 = $("input[name='inbox7']:checked").val();
 
-      var cat = ['' + inbox1 + '', '' + inbox2 + '', '' + inbox3 + '', '' + inbox4 + '', '' + inbox5 + '', '' + inbox6 + '', '' + inbox7 + ''];
-      var count = {};
-      cat.forEach(function(i) {
-          count[i] = (count[i] || 0) + 1;
-      });
-      //console.log(cat);
-      var countarray = jQuery.inArray("undefined", cat);
-      //console.log(countarray);
-      if (countarray == -1) {
-          $('#' + getArray(count)).show('slow');
-          $('.col-md-4').css('pointer-events', 'none');
-          setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight); }, 1000);
-      }
-  }
+    var cat = ['' + inbox1 + '', '' + inbox2 + '', '' + inbox3 + '', '' + inbox4 + '', '' + inbox5 + '', '' + inbox6 + '', '' + inbox7 + ''];
+    var count = {};
+    cat.forEach(function(i) {
+        count[i] = (count[i] || 0) + 1;
+    });
+    //console.log(cat);
+    var countarray = jQuery.inArray("undefined", cat);
+    //console.log(countarray);
+    if (countarray == -1) {
+        $('#' + getArray(count)).show('slow');
+        $('.col-md-4').css('pointer-events', 'none');
+        setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight); }, 1000);
+        $('#raplayBtn').show('slow');
+    }
+}
 
-  /* convert object to array with key */
-  function getArray(o) {
-      var vals = [];
-      for (var i in o) {
-          vals.push(o[i]);
-      }
-      var max = Math.max.apply(null, vals);
-      for (var i in o) {
-          if (o[i] == max) {
-              return i;
-          }
-      }
-  }
+/* convert object to array with key */
+function getArray(o) {
+    var vals = [];
+    for (var i in o) {
+        vals.push(o[i]);
+    }
+    var max = Math.max.apply(null, vals);
+    for (var i in o) {
+        if (o[i] == max) {
+            return i;
+        }
+    }
+}
+
+function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15),
+        scrollInterval = setInterval(function(){
+        if ( window.scrollY != 0 ) {
+            window.scrollBy( 0, scrollStep );
+        }
+        else clearInterval(scrollInterval); 
+    },15);
+    setTimeout(function(){ window.location.reload(); }, 1000);
+}
 </script>
